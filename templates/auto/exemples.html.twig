@@ -1,0 +1,24 @@
+{% extends'base.html.twig' %}
+
+{% block title %} {{parent()}} titre exemple {% endblock %}
+
+{% block body %}
+    <h1>{{ titre }}</h1>
+
+    {% if test %}
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio rem cupiditate ab ipsam voluptate ratione vel odit, tenetur iste, vitae quia facilis sint consequatur, dolores minima possimus! Ipsa, quia illum!</p>
+
+    <p>Sapiente, labore voluptatibus exercitationem, adipisci laudantium quisquam quidem accusantium ducimus dolore voluptas quo recusandae harum unde quibusdam, porro nobis aliquid sequi hic suscipit? Ab quas inventore beatae nulla quae perspiciatis.</p>
+    {% else %}
+    <b>Vous n'êtes l'administrateur !</b>
+    {% endif %}
+<p>
+    <!-- <img src="images/bleue.jpg" alt=""> -->
+    <img src="{{ asset('images/5008.jpg') }}" alt="">
+    {% for voiture in voitures %}
+    {{voiture | upper}}-
+   {% endfor %}
+</p>
+   
+{% endblock %}
