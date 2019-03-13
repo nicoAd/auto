@@ -1,0 +1,19 @@
+{% extends'base.html.twig' %}
+
+{% block body %}
+<div class="jumbotron">
+    <h1>Détail produit</h1> 
+    <div class="row">
+        <div class="col-md-6"><img src="{{ produit.image }}" alt=""></div>
+        <div class="col-md-6">
+            <p>  Nom: <b>{{produit.nom}}</b></p>
+            <p> Marque: <b>{{produit.marque}}</b></p>
+             <p class="">Prix: <b class="bg-warning text-white">{{produit.prix}}€</b></p>
+        </div>
+    </div>
+    <hr>
+    <h1>Description</h1>
+    <p> {{ produit.description }}</p>
+</div>
+
+{% endblock %}

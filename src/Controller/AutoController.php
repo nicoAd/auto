@@ -18,7 +18,7 @@ class AutoController extends AbstractController
     }
 
     /**
-     * @Route("exemples", name="exemples")
+     * @Route("/exemples/toto", name="exemples")
      */
     public function exemples(){
         $titre = "Ma première page";

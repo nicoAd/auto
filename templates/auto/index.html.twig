@@ -10,11 +10,14 @@
 
 <div class="example-wrapper">
     <h1>Hello {{ controller_name }}! ✅</h1>
-
+  
     This friendly message is coming from:
     <ul>
         <li>Your controller at <code><a href="{{ 'C:/wamp64/www/exemples/auto/src/Controller/AutoController.php'|file_link(0) }}">src/Controller/AutoController.php</a></code></li>
         <li>Your template at <code><a href="{{ 'C:/wamp64/www/exemples/auto/templates/auto/index.html.twig'|file_link(0) }}">templates/auto/index.html.twig</a></code></li>
     </ul>
 </div>
+ {% block javascripts %}
+ <script src="{{ asset('js/script.js') }}"></script>
+ {% endblock %}
 {% endblock %}
